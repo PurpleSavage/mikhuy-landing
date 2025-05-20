@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoClose, IoMenu } from "react-icons/io5";
 
-export function Header() {
+export function HeaderSection() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
