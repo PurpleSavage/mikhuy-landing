@@ -6,6 +6,7 @@ import { FaBoxOpen, FaHome, FaList, FaShoppingCart } from "react-icons/fa";
 import { IoGrid } from "react-icons/io5";
 import Image from "next/image";
 import style from '../css/panel.module.css'
+import { BsThreeDotsVertical } from "react-icons/bs";
 export function PanelSection() {
   return (
     <section id="panel" className={`py-16 md:py-24 bg-gray-100 ${style.wrapperMask}`}>
@@ -124,17 +125,10 @@ export function PanelSection() {
                     />
                   </div>
                   <div className="flex flex-col items-start">
-                    <p className="font-semibold text-black/80">Mikhuy shop</p>
-                    <p className="text-gray-400 text-sm">mikhuy@gmail.com</p>
+                    <p className="font-semibold text-black/80 text-xs md:text-md">Mikhuy shop</p>
+                    <p className="text-gray-400 text-xs md:text-sm">mikhuy@gmail.com</p>
                   </div>
-                  <svg
-                    height="1em"
-                    width="1em"
-                    viewBox="0 0 512 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4..."></path>
-                  </svg>
+                  
                 </button>
               </div>
             </div>
@@ -231,13 +225,7 @@ export function PanelSection() {
                           </td>
                           <td className="px-4 py-3 text-center whitespace-nowrap">
                             <button className="text-xl hover:text-gray-600 transition">
-                              <svg
-                                fill="currentColor"
-                                viewBox="0 0 16 16"
-                                className="w-5 h-5"
-                              >
-                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
-                              </svg>
+                              <BsThreeDotsVertical />
                             </button>
                           </td>
                         </tr>
