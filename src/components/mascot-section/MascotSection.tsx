@@ -18,7 +18,8 @@ export function MascotSection() {
   return (
     <section
       ref={containerRef}
-      className="py-16 md:py-24 bg-radial from-[#FCB166] from-40% to-[#FFFCD7] rounded-t-full"
+      className={`py-16 md:py-24 bg-radial from-[#FCB166] from-40% to-[#FFFCD7]  rounded-t-full `}
+      
     >
       <div className="container mx-auto px-4">
         <motion.div
@@ -38,7 +39,7 @@ export function MascotSection() {
         </motion.div>
 
         {/* Contenedor con posiciones absolutas */}
-        <div className="relative flex justify-center items-center h-[400px] md:h-[500px]">
+        <div className="relative flex justify-center items-center h-[400px] md:h-[500px] ">
           {/* Imagen de letras superpuesta con animación */}
           <motion.div style={{ scale, opacity }} className="absolute z-20">
             <Image
