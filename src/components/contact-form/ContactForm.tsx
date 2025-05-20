@@ -13,7 +13,7 @@ export function ContactForm() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
             Contáctanos
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -107,7 +107,7 @@ export function ContactForm() {
                 ></textarea>
               </div>
               <div className="md:col-span-2">
-                <button className="w-full bg-gray-800 hover:bg-gray-900 text-white py-3">
+                <button className="w-full bg-black hover:bg-black text-white py-3">
                   Enviar Mensaje
                 </button>
               </div>

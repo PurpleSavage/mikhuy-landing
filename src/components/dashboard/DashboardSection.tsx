@@ -1,6 +1,6 @@
 "use client";
 
-import './dashboard.css'
+import "./dashboard.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -17,7 +17,7 @@ export function DashboardSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
             Interfaz Intuitiva
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -37,7 +37,12 @@ export function DashboardSection() {
               {/* Sidebar */}
               <div className="sidebar">
                 <div className="sidebar-logo">
-                  <Image width={40} height={40} src="/mikhuy_icon.webp" alt="Mikhuy Logo" />
+                  <Image
+                    width={40}
+                    height={40}
+                    src="/mikhuy_icon.webp"
+                    alt="Mikhuy Logo"
+                  />
                   <h1>MIKHUY</h1>
                   <p>Sistema de gestión</p>
                 </div>
@@ -62,10 +67,10 @@ export function DashboardSection() {
                   </li>
                 </ul>
                 <div className="user-profile">
-                  <div className="user-avatar">C</div>
+                  <div className="user-avatar">M</div>
                   <div className="user-info">
-                    <p className="user-name">Ciddas</p>
-                    <p className="user-email">prueba@gmail.com</p>
+                    <p className="user-name">Mikhuy</p>
+                    <p className="user-email">mikhuy@gmail.com</p>
                   </div>
                   <button className="dropdown-toggle">
                     <i className="fas fa-chevron-down"></i>
@@ -101,10 +106,12 @@ export function DashboardSection() {
                   <tbody>
                     <tr>
                       <td>
-                        <img
-                          src="/placeholder.svg?height=40&width=40"
+                        <Image
+                          src="/gloria_pro.webp"
                           alt="Bebida Láctea"
                           className="product-image"
+                          width={40}
+                          height={40}
                         />
                       </td>
                       <td>Bebida Láctea Pro UHT Chocolate 320 ml</td>
@@ -121,10 +128,12 @@ export function DashboardSection() {
                     </tr>
                     <tr>
                       <td>
-                        <img
-                          src="/placeholder.svg?height=40&width=40"
+                        <Image
+                          src="/batimix.webp"
                           alt="Yogurt"
                           className="product-image"
+                          width={40}
+                          height={40}
                         />
                       </td>
                       <td>Yogurt Battimix Gloria Vainilla Chocolate 146 Gr</td>
@@ -141,10 +150,12 @@ export function DashboardSection() {
                     </tr>
                     <tr>
                       <td>
-                        <img
-                          src="/placeholder.svg?height=40&width=40"
+                        <Image
+                          src="/empanadas.webp"
                           alt="Empanada"
                           className="product-image"
+                          width={40}
+                          height={40}
                         />
                       </td>
                       <td>Empanada de Chanchito Oriental</td>

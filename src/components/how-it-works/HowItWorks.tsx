@@ -34,7 +34,7 @@ export function HowItWorks() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
             Cómo Funciona
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -58,7 +58,7 @@ export function HowItWorks() {
                   {step.step}
                 </span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">
+              <h3 className="text-xl font-bold mb-3 text-black">
                 {step.title}
               </h3>
               <p className="text-gray-600">{step.description}</p>
