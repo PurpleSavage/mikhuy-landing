@@ -8,7 +8,7 @@ import { IoGrid } from "react-icons/io5";
 
 export function DashboardSection() {
   return (
-    <section id="dashboard" className="py-16 md:py-24 bg-gray-100">
+    <section id="dashboard" className="">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
