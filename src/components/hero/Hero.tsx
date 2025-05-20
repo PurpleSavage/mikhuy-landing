@@ -27,7 +27,7 @@ export function HeroSection() {
               animate={{ y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              Gestión Inteligente para Cafetines Universitarios
+              Gestión para Cafetines Universitarios
             </motion.h1>
           </div>
           <div className="overflow-hidden">
