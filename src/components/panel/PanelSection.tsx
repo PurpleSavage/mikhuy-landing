@@ -42,6 +42,8 @@ export function PanelSection() {
                     width={40}
                     height={40}
                     src="/mikhuy_icon.webp"
+                    priority
+                    style={{ height: "auto", width:"auto" }}
                   />
                   <h2 className="text-mikhuy text-3xl exo2-italic italic font-bold">
                     MIKHUY
@@ -120,8 +122,10 @@ export function PanelSection() {
                       alt="Mikhuy profile image"
                       width={56}
                       height={56}
-                      className="m-1 rounded-sm"
+                     
                       src="/mikhuy_icon.webp"
+                      priority
+                      style={{ height: "auto", width:"auto" }}
                     />
                   </div>
                   <div className="flex flex-col items-start">
@@ -200,13 +204,15 @@ export function PanelSection() {
                     <tbody className="divide-y divide-gray-200 bg-white">
                       {products.map((p, index) => (
                         <tr key={index}>
-                          <td className="px-4 py-3 whitespace-nowrap">
+                          <td className="h-[54px] px-4 py-3 whitespace-nowrap">
                             <Image
                               src={p.image}
                               alt={p.name}
                               width={50}
                               height={50}
-                              className="rounded-md object-cover"
+                              className="rounded-md "
+                              priority
+                              style={{ height: "auto", width:"auto" }}
                             />
                           </td>
                           <td className="px-4 py-3 whitespace-nowrap">

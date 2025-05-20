@@ -21,7 +21,9 @@ export function HeaderSection() {
             alt="Mikhuy Logo"
             width={50}
             height={50}
+            priority
             className="object-contain"
+            style={{ height: "auto", width:"auto" }}
           />
 
           <span className="font-bold text-2xl text-black">Mikhuy</span>
