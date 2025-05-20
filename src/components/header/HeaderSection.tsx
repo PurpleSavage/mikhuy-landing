@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { IoClose, IoMenu } from "react-icons/io5";
-
+import { Link } from "react-scroll"   
 export function HeaderSection() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,7 +15,7 @@ export function HeaderSection() {
       style={{ backdropFilter: "blur(8px)" }}
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <Link to="/" smooth={true} duration={800} className="flex items-center gap-2 cursor-pointer">
           <Image
             src="/mikhuy_icon.webp"
             alt="Mikhuy Logo"
@@ -30,26 +30,31 @@ export function HeaderSection() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
           <Link
-            href="#caracteristicas"
-            className="text-gray-700 hover:text-gray-900 transition-colors"
+          
+            to='caracteristicas'
+            smooth={true} duration={800}
+            className="text-gray-700 hover:text-gray-900 transition-colors cursor-pointer"
           >
             Características
           </Link>
           <Link
-            href="#como-funciona"
-            className="text-gray-700 hover:text-gray-900 transition-colors"
+            to="como-funciona"
+            smooth={true} duration={800}
+            className="text-gray-700 hover:text-gray-900 transition-colors cursor-pointer"
           >
             Cómo Funciona
           </Link>
           <Link
-            href="#dashboard"
-            className="text-gray-700 hover:text-gray-900 transition-colors"
+            to="panel"
+            smooth={true} duration={800}
+            className="text-gray-700 hover:text-gray-900 transition-colors cursor-pointer"
           >
             Dashboard
           </Link>
           <Link
-            href="#contacto"
-            className="text-gray-700 hover:text-gray-900 transition-colors"
+            to="contacto"
+            smooth={true} duration={800}
+            className="text-gray-700 hover:text-gray-900 transition-colors cursor-pointer"
           >
             Contacto
           </Link>
@@ -75,29 +80,33 @@ export function HeaderSection() {
           >
             <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
               <Link
-                href="#caracteristicas"
-                className="text-gray-700 hover:text-gray-900 transition-colors py-2"
+                to="caracteristicas"
+                smooth={true} duration={800}
+                className="text-gray-700 hover:text-gray-900 transition-colors py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Características
               </Link>
               <Link
-                href="#como-funciona"
-                className="text-gray-700 hover:text-gray-900 transition-colors py-2"
+                to="como-funciona"
+                smooth={true} duration={800}
+                className="text-gray-700 hover:text-gray-900 transition-colors py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Cómo Funciona
               </Link>
               <Link
-                href="#dashboard"
-                className="text-gray-700 hover:text-gray-900 transition-colors py-2"
+                to="dashboard"
+                smooth={true} duration={800}
+                className="text-gray-700 hover:text-gray-900 transition-colors py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Dashboard
               </Link>
               <Link
-                href="#contacto"
-                className="text-gray-700 hover:text-gray-900 transition-colors py-2"
+                to="contacto"
+                smooth={true} duration={800}
+                className="text-gray-700 hover:text-gray-900 transition-colors py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contacto
