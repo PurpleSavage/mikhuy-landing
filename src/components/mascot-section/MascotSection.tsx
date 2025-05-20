@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function MascotSection() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-100">
+    <section className="py-16 md:py-24 bg-radial from-[#FCB166] from-40% to-[#FFFCD7] rounded-t-full">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -17,7 +17,7 @@ export function MascotSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
             Conoce a Mikhuy
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-white max-w-3xl mx-auto">
             Nuestro amigable asistente que te acompañará en la gestión de tus
             cafeterías.
           </p>
