@@ -59,9 +59,9 @@ export function Footer() {
               <input
                 type="email"
                 placeholder="Tu email"
-                className="px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-l-md focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent"
+                className="px-4 py-2 bg-black text-white border border-gray-700 rounded-l-md focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent"
               />
-              <button className="px-4 py-2 bg-gray-700 text-white rounded-r-md hover:bg-gray-600 transition-colors">
+              <button className="px-4 py-2 bg-white text-black cursor-pointer rounded-r-md hover:bg-gray-600 transition-colors">
                 Enviar
               </button>
             </div>

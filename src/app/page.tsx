@@ -6,6 +6,7 @@ import { HeaderSection } from "@/components/header/HeaderSection";
 
 import { HeroSection } from "@/components/hero/Hero";
 import { HowItWorks } from "@/components/how-it-works/HowItWorks";
+import Integrate from "@/components/integratemodules/Integrate";
 import { MascotSection } from "@/components/mascot-section/MascotSection";
 import SmothWrapper from "@/components/shared/SmothWrapper";
 
@@ -14,11 +15,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <SmothWrapper>
-         <HeaderSection/>
+        <HeaderSection/>
         <HeroSection />
         <FeaturesSection />
         <HowItWorks />
         <MascotSection />
+        <Integrate/>
         <DashboardSection />
         <ContactForm />
         <Footer />
