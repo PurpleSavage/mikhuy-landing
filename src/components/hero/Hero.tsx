@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Header } from "../header/HeaderSection";
+
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,7 +14,8 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative bg-white text-gray-900 overflow-hidden">
+    <section className="relative    overflow-hidden">
+      <Header/>
       <div className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
         <motion.div
           className="md:w-1/2 z-10"
@@ -43,10 +46,10 @@ export function HeroSection() {
             </motion.p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-gray-800 text-white hover:bg-gray-900 text-lg px-8 py-6">
+            <button className="bg-black text-white rounded-lg hover:bg-gray-900 text-lg px-8 py-2">
               Solicitar Demo
             </button>
-            <button className="border-gray-800 text-gray-800 hover:bg-gray-100 text-lg px-8 py-6">
+            <button className="border-slate-400/50 border rounded-lg text-gray-800 hover:bg-gray-100 text-lg px-8 py-2">
               Conocer Más
             </button>
           </div>
