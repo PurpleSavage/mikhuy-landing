@@ -1,36 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiCalendar, FiCoffee, FiUsers } from "react-icons/fi";
-import { LuChartColumn } from "react-icons/lu";
+import { features } from "@/const/features"; // <-- features ahora contiene funciones (IconType), no JSX
 
 export function FeaturesSection() {
-  const features = [
-    {
-      icon: <FiCoffee className="w-10 h-10 text-gray-700" />,
-      title: "Gestión de Inventario",
-      description:
-        "Control preciso de ingredientes y productos con alertas de stock bajo.",
-    },
-    {
-      icon: <FiUsers className="w-10 h-10 text-gray-700" />,
-      title: "Gestión de Personal",
-      description:
-        "Administra turnos, roles y permisos para todo el personal de cafetería.",
-    },
-    {
-      icon: <FiCalendar className="w-10 h-10 text-gray-700" />,
-      title: "Planificación de Menús",
-      description: "Crea y programa menús semanales o mensuales con facilidad.",
-    },
-    {
-      icon: <LuChartColumn className="w-10 h-10 text-gray-700" />,
-      title: "Reportes y Análisis",
-      description:
-        "Estadísticas detalladas sobre ventas, consumo y preferencias.",
-    },
-  ];
-
   return (
     <section id="caracteristicas" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -51,24 +24,30 @@ export function FeaturesSection() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold mb-2 text-black">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600">{feature.description}</p>
-            </motion.div>
-          ))}
+          {features.map((feature, index) => {
+            const Icon = feature.icon; // 👈 renderizamos el componente aquí
+            return (
+              <motion.div
+                key={index}
+                className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <div className="mb-4">
+                  <Icon className="w-10 h-10 text-gray-700" /> {/* 👈 así se usa */}
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-black">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
+

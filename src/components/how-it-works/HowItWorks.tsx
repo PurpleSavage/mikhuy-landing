@@ -1,29 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-
+import { steps } from "@/const/steps";
 export function HowItWorks() {
-  const steps = [
-    {
-      step: "01",
-      title: "Implementación",
-      description:
-        "Configuramos el sistema según las necesidades específicas de tu institución.",
-    },
-    {
-      step: "02",
-      title: "Capacitación",
-      description:
-        "Entrenamos a tu personal para aprovechar al máximo todas las funcionalidades.",
-    },
-    {
-      step: "03",
-      title: "Optimización",
-      description:
-        "Analizamos los datos para mejorar continuamente la operación y experiencia.",
-    },
-  ];
-
+  
+ 
   return (
     <section id="como-funciona" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -47,7 +28,7 @@ export function HowItWorks() {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              className="relative"
+              className="relative border border-slate-400/50 p-4 rounded-lg container"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

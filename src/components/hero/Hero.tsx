@@ -47,10 +47,10 @@ export function HeroSection() {
             </motion.p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-black text-white hover:bg-gray-900 text-lg px-8 py-6">
+            <button className="bg-black text-white rounded-lg hover:bg-gray-900 text-lg px-8 py-2">
               Solicitar Demo
             </button>
-            <button className="border-black text-black hover:bg-gray-100 text-lg px-8 py-6">
+            <button className="border-black border rounded-lg text-black hover:bg-gray-100 text-lg px-8 py-2">
               Conocer Más
             </button>
           </div>
