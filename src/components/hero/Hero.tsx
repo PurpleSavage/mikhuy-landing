@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
+import style from '../css/hero.module.css'
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -13,6 +13,15 @@ export function HeroSection() {
 
   return (
     <section className="relative bg-white text-black overflow-hidden">
+      <div className={style.leaves}>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
       <div className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
         <motion.div
           className="md:w-1/2 z-10"
