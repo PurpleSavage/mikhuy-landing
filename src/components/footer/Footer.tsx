@@ -13,7 +13,7 @@ export function Footer() {
                 alt="Mikhuy Logo"
                 width={40}
                 height={40}
-                className="object-contain grayscale brightness-200"
+                className="object-contain"
               />
               <span className="font-bold text-xl">Mikhuy</span>
             </div>
