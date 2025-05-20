@@ -20,7 +20,7 @@ export function Header() {
             height={50}
             className="object-contain"
           />
-          <span className="font-bold text-2xl text-gray-800">Mikhuy</span>
+          <span className="font-bold text-2xl text-black">Mikhuy</span>
         </Link>
 
         {/* Desktop Navigation */}

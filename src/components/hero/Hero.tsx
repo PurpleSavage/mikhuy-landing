@@ -12,7 +12,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative bg-white text-gray-900 overflow-hidden">
+    <section className="relative bg-white text-black overflow-hidden">
       <div className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
         <motion.div
           className="md:w-1/2 z-10"
@@ -22,7 +22,7 @@ export function HeroSection() {
         >
           <div className="overflow-hidden">
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-black"
               initial={{ y: 100 }}
               animate={{ y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -43,10 +43,10 @@ export function HeroSection() {
             </motion.p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-gray-800 text-white hover:bg-gray-900 text-lg px-8 py-6">
+            <button className="bg-black text-white hover:bg-gray-900 text-lg px-8 py-6">
               Solicitar Demo
             </button>
-            <button className="border-gray-800 text-gray-800 hover:bg-gray-100 text-lg px-8 py-6">
+            <button className="border-black text-black hover:bg-gray-100 text-lg px-8 py-6">
               Conocer Más
             </button>
           </div>
