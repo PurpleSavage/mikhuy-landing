@@ -1,14 +1,14 @@
 "use client";
 
-import { products } from "@/const/dashboard";
-import "./dashboard.css";
+import { products } from "@/const/panel";
 import { motion } from "framer-motion";
 import { FaBoxOpen, FaHome, FaList, FaShoppingCart } from "react-icons/fa";
 import { IoGrid } from "react-icons/io5";
-
-export function DashboardSection() {
+import Image from "next/image";
+import style from '../css/panel.module.css'
+export function PanelSection() {
   return (
-    <section id="dashboard" className="">
+    <section id="panel" className={`py-16 md:py-24 bg-gray-100 ${style.wrapperMask}`}>
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -36,9 +36,10 @@ export function DashboardSection() {
             <div className="w-[250px] h-screen bg-white border-r border-gray-200 flex flex-col text-gray-800">
               <div className="flex flex-col items-center justify-center p-4 gap-1">
                 <div className="flex flex-col items-center justify-center">
-                  <img
+                  <Image
                     alt="mikhuy icon image"
-                    className="size-10"
+                    width={40}
+                    height={40}
                     src="/mikhuy_icon.webp"
                   />
                   <h2 className="text-mikhuy text-3xl exo2-italic italic font-bold">
@@ -114,15 +115,17 @@ export function DashboardSection() {
               <div className="mb-2 mt-2 flex items-center justify-center relative">
                 <button className="text-black rounded-3xl flex items-center gap-3 outline-none px-3 py-2 hover:bg-gray-50 transition-all duration-200 cursor-pointer">
                   <div className="rounded-full">
-                    <img
-                      alt="Ciddas profile image"
-                      className="size-14 m-1 rounded-sm"
-                      src="https://i.pinimg.com/736x/7c/31/d8/7c31d8a44541eebda101b0825c4687cf.jpg"
+                    <Image
+                      alt="Mikhuy profile image"
+                      width={56}
+                      height={56}
+                      className="m-1 rounded-sm"
+                      src="/mikhuy_icon.webp"
                     />
                   </div>
                   <div className="flex flex-col items-start">
-                    <p className="font-semibold text-black/80">Ciddas</p>
-                    <p className="text-gray-400 text-sm">prueba@gmail.com</p>
+                    <p className="font-semibold text-black/80">Mikhuy shop</p>
+                    <p className="text-gray-400 text-sm">mikhuy@gmail.com</p>
                   </div>
                   <svg
                     height="1em"
@@ -137,15 +140,15 @@ export function DashboardSection() {
             </div>
 
             {/* Main Content */}
-            <div className="main-content">
-              <div className="content-header">
-                <h2>Almacén</h2>
+            <div className="flex-1 bg-[#f5f5f5]">
+              <div className="bg-white px-4 py-5">
+                <h2 className="text-xl font-bold">Almacén</h2>
               </div>
               <div className="flex flex-col p-4 sm:p-6 gap-4">
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4">
                   {/* Search */}
-                  <div className="relative w-full sm:max-w-md">
+                  <div className="relative w-full">
                     <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
                       <svg
                         className="w-5 h-5"
@@ -204,7 +207,7 @@ export function DashboardSection() {
                       {products.map((p, index) => (
                         <tr key={index}>
                           <td className="px-4 py-3 whitespace-nowrap">
-                            <img
+                            <Image
                               src={p.image}
                               alt={p.name}
                               width={50}
