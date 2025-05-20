@@ -10,7 +10,10 @@ export function HeaderSection() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className=" border-b border-slate-400/50" style={{ backdropFilter: 'blur(8px)' }}>
+    <header
+      className=" border-b border-slate-400/50"
+      style={{ backdropFilter: "blur(8px)" }}
+    >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -20,6 +23,7 @@ export function HeaderSection() {
             height={50}
             className="object-contain"
           />
+
           <span className="font-bold text-2xl text-black">Mikhuy</span>
         </Link>
 

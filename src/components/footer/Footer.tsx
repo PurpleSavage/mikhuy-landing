@@ -13,32 +13,48 @@ export function Footer() {
                 alt="Mikhuy Logo"
                 width={40}
                 height={40}
+                priority
+                sizes="(max-width: 768px) 100vw, 200px"
                 className="object-contain"
               />
               <span className="font-bold text-xl">Mikhuy</span>
             </div>
-            <p className="text-gray-400">Sistema integral de gestión para cafetines universitarios.</p>
+            <p className="text-gray-400">
+              Sistema integral de gestión para cafetines universitarios.
+            </p>
           </div>
           <div>
             <h3 className="font-bold text-lg mb-4">Enlaces</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#caracteristicas" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="#caracteristicas"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Características
                 </Link>
               </li>
               <li>
-                <Link href="#como-funciona" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="#como-funciona"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Cómo Funciona
                 </Link>
               </li>
               <li>
-                <Link href="#dashboard" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="#dashboard"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Dashboard
                 </Link>
               </li>
               <li>
-                <Link href="#contacto" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="#contacto"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Contacto
                 </Link>
               </li>
@@ -54,7 +70,9 @@ export function Footer() {
           </div>
           <div>
             <h3 className="font-bold text-lg mb-4">Suscríbete</h3>
-            <p className="text-gray-400 mb-4">Recibe nuestras novedades y actualizaciones.</p>
+            <p className="text-gray-400 mb-4">
+              Recibe nuestras novedades y actualizaciones.
+            </p>
             <div className="flex">
               <input
                 type="email"
@@ -68,9 +86,11 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-          <p>© {new Date().getFullYear()} Mikhuy. Todos los derechos reservados.</p>
+          <p>
+            © {new Date().getFullYear()} Mikhuy. Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
