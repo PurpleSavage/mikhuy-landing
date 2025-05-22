@@ -49,7 +49,7 @@ export function MascotSection() {
               height={150}
               className="object-contain"
               priority
-              style={{ height: "auto", width:"auto" }}
+              style={{ height: "auto", width:"auto" }} 
             />
           </motion.div>
 
