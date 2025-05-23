@@ -9,7 +9,7 @@ import style from '../css/panel.module.css'
 import { BsThreeDotsVertical } from "react-icons/bs";
 export function PanelSection() {
   return (
-    <section id="panel" className={`py-16 md:py-24 bg-gray-100 ${style.wrapperMask}`}>
+    <section id="panel" className={`py-16 md:py-24   bg-gray-100 ${style.wrapperMask}`}>
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
