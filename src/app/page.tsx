@@ -6,6 +6,7 @@ import { HeaderSection } from "@/components/header/HeaderSection";
 import { HeroSection } from "@/components/hero/Hero";
 import { HowItWorks } from "@/components/how-it-works/HowItWorks";
 import Integrate from "@/components/integratemodules/Integrate";
+import IphoneSection from "@/components/iphone/IphoneSection";
 import { MascotSection } from "@/components/mascot-section/MascotSection";
 import MobileSection from "@/components/mobile/MobileSection";
 
@@ -24,9 +25,9 @@ export default function Home() {
         <MascotSection />
         <Integrate />
         <PanelSection />
+        <IphoneSection/>
         <MobileSection/>
-        <ContactForm />
-        
+        <ContactForm /> 
         <Footer />
       </SmothWrapper>
     </div>
